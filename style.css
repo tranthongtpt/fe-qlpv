@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
+/*  global  color*/
+:root{
+    --d-color: #000;
+    --tm-color:#5932EA;
+    --t-color:#fff;
+    --v-color:#FF7A00;
+    --h-color:#F2EFFF;
+    --do-color:#FB0000;
+    --pink-color:#EED4D4;
+    --border-color:#E8E8E8;
+    --size-bezel: .5rem;
+  --size-radius: 4px;
+  
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
+html{
+    /* height: 100%; */
+    font-size: 62,5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+/* body{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+} */
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: var(--pink-color);
+}
+/* -------------- phan he thong chinh ---------- */
+section .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+section .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+section .container{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+section .container .box-container{
+    height: 700px;
+    width: 570px;
+    background: var(--t-color);
+    border-radius: 8px;
+}
+section .container .box-container h1{
+    color: var(--tm-color);
+    font-weight:500;
+    font-size: 2rem;
+    display: inline-block;
+    text-transform: uppercases;
+    border-bottom: 0.1rem solid var(--d-color);
+    margin-bottom: 2rem;
+    padding-bottom: 2.1rem;
+}
+section .container .box-container .form-group{
+    margin: 2rem 4rem;
+}
+section .container .box-container .form-group input{
+    width: 100%;
+    outline: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    background: transparent;
+    color: var(--t-color) !important;
+}
+section .container .box-container .form-group input[type="submit"]{
+    background: var(--tm-color);
+    color: var(--white-color);
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+}
+section .container .box-container .form-group .rememberme{
+    
+}
+/* xu ly css phan input */
+.form-group {
+    position: relative;
+  }
+  .input__label {
+    position: absolute;
+    top:0;
+    padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * .3);
+    margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * .5);
+    background: pink;
+    white-space: nowrap;
+    transform: translate(0, 0);
+    transform-origin: 0 0;
+    background: var(--t-color);
+    transition: transform 120ms ease-in;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  .input__field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    line-height: 1.25rem;
+    border: 1.5px solid var(--border-color);
+    padding: calc(var(--size-bezel) * 1.5) var(--size-bezel);
+    color: #00bafa;
+    background: transparent;
+    border-radius: var(--size-radius);
+  }
+  /* event kich vao thay doi chu */
+  .input__field:not(:-moz-placeholder-shown) + .input__label {
+    transform: translate(0.25rem, -65%) scale(0.8);
+    color: var(--tm-color);
+  }
+  .input__field:not(:-ms-input-placeholder) + .input__label {
+    transform: translate(0.25rem, -65%) scale(0.8);
+    color: var(--tm-color);
+  }
+  .input__field:focus + .input__label, .input__field:not(:placeholder-shown) + .input__label {
+    transform: translate(0.25rem, -65%) scale(0.8);
+    color: var(--tm-color);
+  }
+/* xu ly phan input */
