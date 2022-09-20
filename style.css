@@ -48,6 +48,12 @@ section{
     display: flex;
     background: var(--pink-color);
 }
+.t-center{
+  text-align: center;
+}
+.mr-btn{
+  top:5rem;
+}
 /* -------------- phan he thong chinh ---------- */
 section .imgBx{
     position: relative;
@@ -70,26 +76,38 @@ section .container{
     display: flex;
 }
 section .container .box-container{
-    height: 700px;
+    height: 640px;
     width: 570px;
     background: var(--t-color);
     border-radius: 8px;
 }
+section .container .box-container .title{
+  margin: 2rem 4rem;
+  text-align: center;
+}
 section .container .box-container h1{
     color: var(--tm-color);
     font-weight:500;
-    font-size: 2rem;
+    font-size: 1.7rem;
     display: inline-block;
-    text-transform: uppercases;
+    text-transform: uppercase;
     border-bottom: 0.1rem solid var(--d-color);
     margin-bottom: 2rem;
     padding-bottom: 2.1rem;
+    text-align: center;
 }
 section .container .box-container .form-group{
     margin: 2rem 4rem;
 }
+section .container .box-container .form-group .checkbox{
+  display: flex;
+  justify-content: space-between;
+}
+.login-forgot{
+  /* float: right; */
+}
 section .container .box-container .form-group input{
-    width: 100%;
+    /* width: 100%; */
     outline: none;
     font-weight: 400;
     font-size: 1.6rem;
@@ -117,6 +135,7 @@ section .container .box-container .form-group .rememberme{
   .input__label {
     position: absolute;
     top:0;
+    left: 0;
     padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * .3);
     margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * .5);
     background: pink;
