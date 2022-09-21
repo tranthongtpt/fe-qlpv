@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
+/*  global  color*/
+:root{
+    --d-color: #000;
+    --tm-color:#5932EA;
+    --t-color:#fff;
+    --v-color:#FF7A00;
+    --h-color:#F2EFFF;
+    --do-color:#FB0000;
+    --pink-color:#EED4D4;
+    --border-color:#E8E8E8;
+    --size-bezel: .5rem;
+  --size-radius: 4px;
+  
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
+html{
+    /* height: 100%; */
+    font-size: 62,5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: var(--pink-color);
+}
+.tc{
+  text-align: center;
+}
+.t5-space{
+    top:5rem;
+}
+.t7-space{
+    top: 7rem;
+}
+.t14-space{
+    top: 14rem;
+}
+.pe{
+    pointer-events: none;
+}
+/* -------------- phan he thong chinh ---------- */
