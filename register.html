@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- add -->
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <!-- navbar -->
+        <nav class="navbar">
+            <!-- left navbar -->
+            <div class="navbar-nav">
+                <a class="toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></a> 
+            </div>
+            <!-- right navbar -->
+            <div class="navbar-nav navbar-nav__right">
+                <!-- Notifications Dropdown Menu -->
+                <div class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="far fa-bell"></i>
+                      <span class="badge">12</span>
+                    </a>
+                    <div class="dropdown-menu" style="display: none;">
+                      <span class="dropdown-item">15 Notifications</span>
+                      <div class="dropdown-divider"></div>
+                      <a href="#" class="dropdown-item">
+                        <i class="fas fa-envelope mr-2"></i> 4 new messages
+                        <span class="float-right">3 mins</span>
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <a href="#" class="dropdown-item">
+                        <i class="fas fa-users mr-2"></i> 8 friend requests
+                        <span class="float-right">12 hours</span>
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <a href="#" class="dropdown-item">
+                        <i class="fas fa-file mr-2"></i> 3 new reports
+                        <span class="float-right">2 days</span>
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <a href="#" class="dropdown-item">See All Notifications</a>
+                    </div>
+                </div>
+                <!-- logout -->
+                <div class="nav-item">
+                    <a class="nav-link">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main side bar container -->
+        <div class="main-sidebar">
+            <a href="/" class="brand-link">
+                <img src="/img/icon logo.png" alt="" class="brand-image">
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel">
+                    <div class="image">
+                        <img src="/img/149071.png" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <p class="title-inf">Nguyen Van A</p>
+                        <p class="title-role">Chức vụ</p>
+                    </div>
+                    <div class="show-inf">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+
+                <div class="nav-sidebar">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="/" class="nav-item__link">
+                                <div class="line-col"></div>
+                              <img src="/img/element-2 1.svg"  class="nav-icon">
+                              <p>
+                                Bảng điều khiển
+                              </p>
+                              <div class="line-col"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-item__link">
+                              <img src="/img/la_user-edit.svg" class="nav-icon">
+                              <p>
+                                abccc
+                              </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-item__link">
+                              <img src="/img/briefcase.svg" class="nav-icon">
+                              <p>
+                                xxxxxxx
+                              </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-item__link">
+                              <img src="/img/calendar.svg"  class="nav-icon">
+                              <p>
+                                Lịch làm việc
+                              </p>
+                            </a>
+                        </li>
+                        <div class="line"></div>
+                        <li class="nav-item">
+                            <a href="/" class="nav-item__link">
+                              <img src="/img/chart-square.svg" class="nav-icon">
+                              <p>
+                                Thống kê
+                              </p>
+                            </a>
+                        </li>
+
+                       <div class="line"></div>
+
+                       <li class="nav-item">
+                            <a href="/" class="nav-item__link">
+                                <img src="/img/la_user-edit.svg" class="nav-icon">
+                                <p>
+                                    Người dùng
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-item__link">
+                                <img src="/img/setting-2.svg" class="nav-icon">
+                                <p>
+                                    Cài đặt
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- content wrapper, contains page content -->
+    </div>
+</body>
+</html>

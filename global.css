@@ -12,7 +12,7 @@
     --border-color:#E8E8E8;
     --size-bezel: .5rem;
   --size-radius: 4px;
-  
+  --bg-icon:rgb(228,230,235)  ;
 }
 
 *{
