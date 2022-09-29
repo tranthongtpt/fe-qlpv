@@ -42,23 +42,23 @@ body{
   height:50px;
   width:100%;
   align-items: center;
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
   transition:all 0.5s ease;
 }
 .sidebar.active .logo_content .logo{
-  opacity:1;
+  opacity:0;
   pointer-events: none;
 }
 .logo_content .logo .logo_name{
   font-size: 20px;
   font-weight: 400;
 }
-.sidebar #btn{
+.home_content #btn{
   position:absolute;
   color:var(--white-color);
   top:6px;
-  left:50%;
+  left:90%;
   font-size: 22px;
   height:50px;
   width:50px;
@@ -67,7 +67,7 @@ body{
   transform: translateX(-50%);
   cursor: pointer;
 }
-.sidebar.active #btn{
+.home_content.active #btn{
   left:50%;
 }
 .sidebar ul{
@@ -114,7 +114,7 @@ body{
 }
 .sidebar ul li:hover .tooltip{
   transition:all 0.5s ease;
-  opacity:1;
+  opacity:0;
   top:50%;
 }
 .sidebar ul li input{
@@ -263,4 +263,15 @@ body{
   margin-bottom:15px;
 }
         
-      
+/* add */
+.header{
+  /* background: #fff; */
+  box-shadow: 0 0 2px rgb(0 0 0 / 10%);
+ 
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1001;
+  height: 100px;
+ 
+}
