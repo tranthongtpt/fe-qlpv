@@ -13,143 +13,184 @@
 </head>
 <body>
     <div class="container">
-        <!-- navbar -->
-        <nav class="navbar">
-            <!-- left navbar -->
-            <div class="navbar-nav">
-                <a class="toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></a> 
-            </div>
-            <!-- right navbar -->
-            <div class="navbar-nav navbar-nav__right">
-                <!-- Notifications Dropdown Menu -->
-                <div class="nav-item">
-                    <a class="nav-link" href="#">
-                      <i class="far fa-bell"></i>
-                      <span class="badge">12</span>
-                    </a>
-                    <div class="dropdown-menu" style="display: none;">
-                      <span class="dropdown-item">15 Notifications</span>
-                      <div class="dropdown-divider"></div>
-                      <a href="#" class="dropdown-item">
-                        <i class="fas fa-envelope mr-2"></i> 4 new messages
-                        <span class="float-right">3 mins</span>
+
+      <div class="header">
+        
+          <!-- navbar -->
+          <div class="navbar">
+              <i class="fas fa-bars" id="btn-toggle"></i> 
+              <div class="navbar-nav navbar-nav__right">
+                  <!-- Notifications Dropdown Menu -->
+                  <div class="nav-item">
+                      <a class="nav-link" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge">12</span>
                       </a>
-                      <div class="dropdown-divider"></div>
-                      <a href="#" class="dropdown-item">
-                        <i class="fas fa-users mr-2"></i> 8 friend requests
-                        <span class="float-right">12 hours</span>
+                      <div class="dropdown-menu" style="display: none;">
+                        <span class="dropdown-item">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                          <i class="fas fa-envelope mr-2"></i> 4 new messages
+                          <span class="float-right">3 mins</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                          <i class="fas fa-users mr-2"></i> 8 friend requests
+                          <span class="float-right">12 hours</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                          <i class="fas fa-file mr-2"></i> 3 new reports
+                          <span class="float-right">2 days</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">See All Notifications</a>
+                      </div>
+                  </div>
+                  <!-- logout -->
+                  <div class="nav-item">
+                      <a class="nav-link">
+                          <i class="fas fa-sign-out-alt"></i>
                       </a>
-                      <div class="dropdown-divider"></div>
-                      <a href="#" class="dropdown-item">
-                        <i class="fas fa-file mr-2"></i> 3 new reports
-                        <span class="float-right">2 days</span>
-                      </a>
-                      <div class="dropdown-divider"></div>
-                      <a href="#" class="dropdown-item">See All Notifications</a>
-                    </div>
-                </div>
-                <!-- logout -->
-                <div class="nav-item">
-                    <a class="nav-link">
-                        <i class="fas fa-sign-out-alt"></i>
-                    </a>
-                </div>
-            </div>
-        </nav>
-
-        <!-- main side bar container -->
-        <div class="main-sidebar">
-            <a href="/" class="brand-link">
-                <img src="/img/icon logo.png" alt="" class="brand-image">
-            </a>
-
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <!-- Sidebar user panel (optional) -->
-                <div class="user-panel">
-                    <div class="image">
-                        <img src="/img/149071.png" class="img-circle" alt="User Image">
-                    </div>
-                    <div class="info">
-                        <p class="title-inf">Nguyen Van A</p>
-                        <p class="title-role">Chức vụ</p>
-                    </div>
-                    <div class="show-inf">
-                        <i class="fas fa-ellipsis-h"></i>
-                    </div>
-                </div>
-
-                <div class="nav-sidebar">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="/" class="nav-item__link">
-                                <div class="line-col"></div>
-                              <img src="/img/element-2 1.svg"  class="nav-icon">
-                              <p>
-                                Bảng điều khiển
-                              </p>
-                              <div class="line-col"></div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/" class="nav-item__link">
-                              <img src="/img/la_user-edit.svg" class="nav-icon">
-                              <p>
-                                abccc
-                              </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/" class="nav-item__link">
-                              <img src="/img/briefcase.svg" class="nav-icon">
-                              <p>
-                                xxxxxxx
-                              </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/" class="nav-item__link">
-                              <img src="/img/calendar.svg"  class="nav-icon">
-                              <p>
-                                Lịch làm việc
-                              </p>
-                            </a>
-                        </li>
-                        <div class="line"></div>
-                        <li class="nav-item">
-                            <a href="/" class="nav-item__link">
-                              <img src="/img/chart-square.svg" class="nav-icon">
-                              <p>
-                                Thống kê
-                              </p>
-                            </a>
-                        </li>
-
-                       <div class="line"></div>
-
-                       <li class="nav-item">
-                            <a href="/" class="nav-item__link">
-                                <img src="/img/la_user-edit.svg" class="nav-icon">
-                                <p>
-                                    Người dùng
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/" class="nav-item__link">
-                                <img src="/img/setting-2.svg" class="nav-icon">
-                                <p>
-                                    Cài đặt
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="header-left">
+          <a href="/" class="brand-link">
+            <p>Cvs Software</p>
+          </a>
         </div>
+          <!-- Sidebar user panel (optional) -->
+          <div class="user">
+              <div class="user-details">
+                <img src="/img/149071.png" class="img-circle" alt="User Image" id="logo-user">
+                <div class="info">
+                    <p class="title-inf">Nguyen Van A</p>
+                    <p class="title-role">Chức vụ</p>
+                </div>
+                <div class="show-inf">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+              </div>
+          </div>
+
+          <div class="nav-sidebar">
+              <ul class="nav">
+                  <li class="nav-item">
+                      <a href="/" class="nav-item__link">
+                        <img src="/img/element-2 1.svg"  class="nav-icon">
+                        <span class="links-name">
+                          Bảng điều khiển
+                        </span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/" class="nav-item__link">
+                        <img src="/img/la_user-edit.svg" class="nav-icon">
+                        <span class="links-name">
+                          abccc
+                        </span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/" class="nav-item__link">
+                        <img src="/img/briefcase.svg" class="nav-icon">
+                        <span class="links-name">
+                          xxxxxxx
+                        </span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/" class="nav-item__link">
+                        <img src="/img/calendar.svg"  class="nav-icon">
+                        <span class="links-name">
+                          Lịch làm việc
+                        </span>
+                      </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                      <a href="/" class="nav-item__link">
+                        <img src="/img/chart-square.svg" class="nav-icon">
+                        <span class="links-name">
+                          Thống kê
+                        </span>
+                      </a>
+                  </li>
+
+                  <div class="line"></div>
+
+                  <li class="nav-item">
+                      <a href="/" class="nav-item__link">
+                          <img src="/img/la_user-edit.svg" class="nav-icon">
+                          <span class="links-name">
+                              Người dùng
+                          </span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/" class="nav-item__link">
+                          <img src="/img/setting-2.svg" class="nav-icon">
+                          <span class="links-name">
+                              Cài đặt
+                          </span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
 
         <!-- content wrapper, contains page content -->
+        <div class="content-wrapper" style="min-height: 961px;">
+
+         <div class="top-bars">
+          <div class="content-header">
+            <div class="box-item">
+              <a href="/" class="box-item__link">
+                <img src="./img/la_user-edit.svg" alt="">
+                <p>Đăng ký làm việc</p>
+                <span class="notification-badge">5</span>
+              </a>
+            </div>
+            <div class="box-item">
+              <a href="/" class="box-item__link">
+                <img src="./img/carbon_request-quote.svg" alt="">
+                <p>Đăng ký yêu cầu thông tin</p>
+              </a>
+            </div>
+            <div class="box-item">
+              <a href="/" class="box-item__link">
+                <img src="./img/clarity_list-line.svg" alt="">
+                <p>Xem văn bản</p>
+              </a>
+            </div>
+            <div class="box-item">
+              <a href="/" class="box-item__link">
+                <img src="./img/fluent_task-list-square-person-20-regular.svg" alt="">
+                <p>Danh sách đơn vị báo chí</p>
+              </a>
+            </div>
+        </div>
+         </div>
+
+          <div class="content">
+
+          </div>
+        </div>
     </div>
+
+    <script>
+      
+        let btn = document.querySelector('#btn-toggle');
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.oncick=function(){
+          sidebar.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
