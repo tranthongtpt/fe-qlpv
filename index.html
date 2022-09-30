@@ -5,135 +5,154 @@
    <meta charset="UTF-8">
    <title> Responsive Sidebar Menu | Code4education </title>
    <link rel="stylesheet" href="./main.css">
+   <link rel="stylesheet" href="./global.css">
    <!-- Boxicons CDN Link -->
-   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
    <div class="container">
+
       <div class="header">
          <div class="navbar">
-            <i class="fas fa-bars" id="btn-toggle"></i> 
-            <div class="navbar-nav navbar-nav__right">
+            <i class='bx bx-menu' id="btn"></i>
+            <div class="navbar-nav">
                 <!-- Notifications Dropdown Menu -->
                 <div class="nav-item">
                     <a class="nav-link" href="#">
-                      <i class="far fa-bell"></i>
-                      <span class="badge">12</span>
+                        <i class='bx bx-bell bx-tada'></i>
+                        <span class="badge"><p>12</p></span>
                     </a>
                 </div>
                 <!-- logout -->
                 <div class="nav-item">
                     <a class="nav-link">
-                        <i class="fas fa-sign-out-alt"></i>
+                        <i class='bx bx-log-out bx-rotate-180'></i>
                     </a>
                 </div>
             </div>
         </div>
       </div>
+
       <div class="sidebar">
          <div class="logo_content">
             <div class="logo">
-               <div class="logo_name">Code4education</div>
+               <i class='bx bxl-netlify'></i>
+               <span>quản lý báo chí</span>
             </div>
-           
+         </div>
+         <div class="content">
+            <div class="user">
+               <div class="user_details">
+                  <img src="/img/149071.png" class="img-circle" alt="User Image" id="logo-user">
+                  <div class="name_job">
+                     <div class="name">Username</div>
+                     <div class="job">chuc vu</div>
+                  </div>
+               </div>
+            </div>
          </div>
          <ul class="nav_list">
             <li>
-               <i class='bx bx-search'></i>
-               <input type="text" placeholder="Search...">
-               <span class="tooltip">Search</span>
-            </li>
-            <li>
                <a href="#">
-                  <i class='bx bx-grid-alt'></i>
-                  <span class="links_name">Dashboard</span>
+                  <i class='bx bx-grid-alt' ></i>
+                  <span class="links_name">Bảng điều khiển</span>
                </a>
-               <span class="tooltip">Dashboard</span>
+               <span class="tooltip">Bảng điều khiển</span>
             </li>
             <li>
                <a href="#">
-                  <i class='bx bx-user'></i>
-                  <span class="links_name">User</span>
+                  <i class='bx bx-edit'></i>
+                  <span class="links_name">abcxz</span>
                </a>
-               <span class="tooltip">User</span>
+               <span class="tooltip">abcxz</span>
             </li>
             <li>
                <a href="#">
-                  <i class='bx bx-chat'></i>
+                  <i class='bx bx-message-square-dots' ></i>
                   <span class="links_name">Messages</span>
                </a>
                <span class="tooltip">Messages</span>
             </li>
             <li>
                <a href="#">
-                  <i class='bx bx-pie-chart-alt-2'></i>
-                  <span class="links_name">Analytics</span>
+                  <i class='bx bx-calendar'></i>
+                  <span class="links_name">Lịch làm việc</span>
                </a>
-               <span class="tooltip">Analytics</span>
+               <span class="tooltip">Lịch làm việc</span>
             </li>
             <li>
                <a href="#">
-                  <i class='bx bx-folder'></i>
-                  <span class="links_name">File Manager</span>
+                  <i class='bx bx-bar-chart-square'></i>
+                  <span class="links_name"> Thống kê</span>
                </a>
-               <span class="tooltip">File Manager</span>
+               <span class="tooltip"> Thống kê</span>
+            </li>
+
+            <div class="line"></div>
+
+            <li>
+               <a href="#">
+                  <i class='bx bx-user-circle' ></i>
+                  <span class="links_name">Người dùng</span>
+               </a>
+               <span class="tooltip">Người dùng</span>
             </li>
             <li>
                <a href="#">
-                  <i class='bx bx-cart-alt'></i>
-                  <span class="links_name">Order</span>
+                  <i class='bx bx-cog' ></i>
+                  <span class="links_name">Cài đặt</span>
                </a>
-               <span class="tooltip">Order</span>
-            </li>
-            <li>
-               <a href="#">
-                  <i class='bx bx-heart'></i>
-                  <span class="links_name">Saved</span>
-               </a>
-               <span class="tooltip">Saved</span>
-            </li>
-            <li>
-               <a href="#">
-                  <i class='bx bx-cog'></i>
-                  <span class="links_name">Setting</span>
-               </a>
-               <span class="tooltip">Setting</span>
+               <span class="tooltip">Cài đặt</span>
             </li>
          </ul>
-         <div class="content">
-            <div class="user">
-               <div class="user_details">
-                  <img src="images/profile.jpg" alt="">
-                  <div class="name_job">
-                     <div class="name">Bhaskar Gupta</div>
-                     <div class="job">Web Designer</div>
-                  </div>
-               </div>
-               <i class='bx bx-log-out' id="log_out"></i>
-            </div>
-         </div>
       </div>
+
       <div class="home_content">
-         <div class="text"> <i class='bx bx-menu' id="btn"></i>Dashboard</div>
+         <div class="top-bars">
+            <div class="content-header">
+              <div class="box-item">
+                <a href="/" class="box-item__link">
+                  <img src="./img/la_user-edit.svg" alt="">
+                  <p>Đăng ký làm việc</p>
+                  <span class="notification-badge">5</span>
+                </a>
+              </div>
+              <div class="box-item">
+                <a href="/" class="box-item__link">
+                  <img src="./img/carbon_request-quote.svg" alt="">
+                  <p>Đăng ký yêu cầu thông tin</p>
+                </a>
+              </div>
+              <div class="box-item">
+                <a href="/" class="box-item__link">
+                  <img src="./img/clarity_list-line.svg" alt="">
+                  <p>Xem văn bản</p>
+                </a>
+              </div>
+              <div class="box-item">
+                <a href="/" class="box-item__link">
+                  <img src="./img/fluent_task-list-square-person-20-regular.svg" alt="">
+                  <p>Danh sách đơn vị báo chí</p>
+                </a>
+              </div>
+          </div>
+           </div>
+           
       </div>
    </div>
 
    <script>
       let btn = document.querySelector("#btn");
       let sidebar = document.querySelector(".sidebar");
-      let searchBtn = document.querySelector(".bx-search");
+      let header = document.querySelector(".header");
 
       btn.onclick = function(){
       sidebar.classList.toggle("active");
+      header.classList.toggle("active");
       }
-      searchBtn.onclick = function(){
-      sidebar.classList.toggle("active");
-      }
-
-
    </script>
 </body>
 

@@ -2,16 +2,16 @@
 
 /*  global  color*/
 :root{
-    --d-color: #000;
+    --black-color: #000;
     --tm-color:#5932EA;
-    --t-color:#fff;
+    --white-color:#fff;
     --v-color:#FF7A00;
     --h-color:#F2EFFF;
     --do-color:#FB0000;
     --pink-color:#EED4D4;
     --border-color:#E8E8E8;
     --cl-content:#F6F8FB;
-
+    --background-color:#F8FAFB;
     --size-bezel: .5rem;
     --size-radius: 4px;
     --bg-icon:rgb(228,230,235) ;
@@ -31,12 +31,19 @@
 }
 
 html{
-    /* height: 100%; */
     font-size: 62,5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%; 
+}
+::selection{
+    color:var(--white-color);
+    background: var(--black-color);
+} 
 section{
     position: relative;
     width: 100%;
@@ -44,6 +51,7 @@ section{
     display: flex;
     background: var(--pink-color);
 }
+/*  */
 .tc{
   text-align: center;
 }
