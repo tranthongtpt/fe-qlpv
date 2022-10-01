@@ -112,7 +112,7 @@
   width:100%;
   text-align: center;
   pointer-events: none;
-  transition-delay: .5s;
+  transition-delay: 1s;
 }
 .sidebar .logo_content .logo span{
   font-size: 20px;
@@ -363,9 +363,8 @@
   display: flex;
   height: 20px;
   justify-content: flex-end;
-  /* margin-left: 20px; */
   padding: 2px 6px;
-  color: var(--t-color);
+  color: var(--white-color);
 }
 .jc-se{
   justify-content: space-evenly;
