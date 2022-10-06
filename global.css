@@ -66,4 +66,14 @@ section{
 .pe{
     pointer-events: none;
 }
+.mb-2r{
+    margin-bottom: 2rem;
+  }
+.red-color{
+    color: var(--do-color);
+    background-color: rgba(242,17,54,.12)!important;
+}
+.xanh-color{
+    color: #26af48;
+}
 /* -------------- phan he thong chinh ---------- */

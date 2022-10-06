@@ -114,9 +114,9 @@
          <div class="top-bars">
             <div class="content-header">
               <div class="box-item">
-                <a href="/" class="box-item__link jc-se">
+                <a href="/" class="box-item__link">
                   <i class='bx bxs-user-detail'></i>
-                  <p>Đăng ký người dùng</p>
+                  <p>Đăng ký làm việc</p>
                   <span class="notification-badge">5</span>
                 </a>
                 <div class="box-item__border">
@@ -126,9 +126,15 @@
               <div class="box-item">
                 <a href="/" class="box-item__link">
                   <i class='bx bx-calendar-edit'></i>
-                  <p>Đăng ký yêu cầu thông tin</p>
+                  <p>Đăng ký tài khoản user</p>
                 </a>
               </div>
+              <div class="box-item">
+               <a href="/" class="box-item__link">
+                 <i class='bx bx-calendar-edit'></i>
+                 <p>Quản lý người dùng</p>
+               </a>
+             </div>
               <div class="box-item">
                 <a href="/" class="box-item__link">
                   <i class='bx bxs-file-doc'></i>
@@ -145,56 +151,188 @@
          </div>
 
          <div class="content-wrapper">
-            <div class="header-card">
-               <p class="page-title">Form đăng ký</p>
+            <div class="card-header">
+               <label class="page-title">Form đăng ký</label>
             </div>
             <form action="#">
                <div class="body-card">
                   <div class="card">
-                     <label for="">họ</label>
+                     <label for="">Họ</label>
                      <input type="text" class="form-control" name="account" value="">
                   </div>
                   <div class="card">
-                     <label for="">tên</label>
+                     <label for="">Tên</label>
                      <input type="text" class="form-control" name="account" value="">
                   </div>
                   <div class="card">
-                     <label for="">địa chỉ</label>
+                     <label for="">Địa chỉ</label>
                      <input type="text" class="form-control" name="account" value="">
                   </div>
                   
                   <div class="card">
-                     <label for="">số điện thoại</label>
+                     <label for="">Số điện thoại</label>
                      <input type="text" class="form-control" name="account" value="">
                   </div>
                   <div class="card">
-                     <label for="">email</label>
+                     <label for="">Email</label>
                      <input type="text" class="form-control" name="account" value="">
                   </div>
                   <div class="card">
-                     <label for="">đơn vị trực thuộc</label>
+                     <label for="">Đơn vị trực thuộc</label>
+                     <input type="text" class="form-control" name="account" value="">
+                  </div>
+                  <div>
+                     <label class="role">Phân quyền</label>
+                     <div class="choose-radio">
+                        <div class="form-check">
+                           <input type="radio" class="form-check-input" name="option" value="option1" style="height:16px; width:16px; vertical-align: middle;">
+                           <label class="form-check-label" for="option_pv">Phóng viên</label>
+                        </div>
+                        <div class="form-check">
+                           <input type="radio" class="form-check-input" name="option" value="option1"  style="height:16px; width:16px; vertical-align: middle;">
+                           <label class="form-check-label" for="option_cqnn">Cơ quan nhà nước</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="layout-btn">
+                  <button type="submit" class="btn">Cập nhật</button>
+               </div>
+            </form>
+         </div>
+         <div class="content-wrapper">
+            <div class="card-header mb-2r">
+               <div class="page-title">Danh sách người dùng</div>
+               <div class="table-search">
+                  <input type="text" placeholder="search">
+                  <button class="btn-search" type="submit">
+                     <i class='bx bx-search'></i>
+                  </button>
+               </div>
+            </div>
+            <table class="table">
+               <thead>
+                  <tr>
+                     <th>Họ và tên</th>
+                     <th>Email</th>
+                     <th>Địa chỉ</th>
+                     <th>Số điện thoại</th>
+                     <th>Đơn vị trực thuộc</th>
+                     <th>Phân quyền</th>
+                     <th>Hành động</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Nguyễn Văn A</td>
+                     <td>abc@gmail.com</td>
+                     <td>666 nguyễn văn linh</td>
+                     <td>0123456789</td>
+                     <td>Báo tdanh niên</td>
+                     <td>CQNN</td>
+                     <td>
+                        <a href="#" class="btn-icon xanh-color">
+                           <i class='bx bx-edit'></i>
+                        </a>
+                        <a href="#" class="btn-icon red-color">
+                           <i class='bx bx-basket'></i>
+                        </a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Nguyễn Văn A</td>
+                     <td>abc@gmail.com</td>
+                     <td>666 nguyễn văn linh</td>
+                     <td>0123456789</td>
+                     <td>Báo tdanh niên</td>
+                     <td>CQNN</td>
+                     <td>
+                        <a href="#" class="btn-icon xanh-color">
+                           <i class='bx bx-edit'></i>
+                        </a>
+                        <a href="#" class="btn-icon red-color">
+                           <i class='bx bx-basket'></i>
+                        </a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>Nguyễn Văn A</td>
+                     <td>abc@gmail.com</td>
+                     <td>666 nguyễn văn linh</td>
+                     <td>0123456789</td>
+                     <td>Báo tdanh niên</td>
+                     <td>CQNN</td>
+                     <td>
+                        <a href="#" class="btn-icon xanh-color">
+                           <i class='bx bx-edit'></i>
+                        </a>
+                        <a href="#" class="btn-icon red-color">
+                           <i class='bx bx-basket'></i>
+                        </a>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <div class="pagination">
+               <div class="text-show"><p>Hiện thị 1 trong 30 trang</p></div>
+               <div class="boxx">
+                  <ul>
+                     <li><a href="#">Trước</a></li>
+                     <li><a href="#">1</a></li>
+                     <li><a href="#">2</a></li>
+                     <li><a href="#">3</a></li>
+                     <li><a href="#">Sau</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="content-wrapper">
+            <div class="card-header">
+               <label class="page-title">Form đăng ký</label>
+            </div>
+            <form action="#">
+               <div class="body-card">
+                  <div class="card">
+                     <label for="">Họ</label>
+                     <input type="text" class="form-control" name="account" value="">
+                  </div>
+                  <div class="card">
+                     <label for="">Tên</label>
+                     <input type="text" class="form-control" name="account" value="">
+                  </div>
+                  <div class="card">
+                     <label for="">Email</label>
+                     <input type="text" class="form-control" name="account" value="">
+                  </div>
+                  <div class="card">
+                     <label for="">Đơn vị trực thuộc</label>
                      <input type="text" class="form-control" name="account" value="">
                   </div>
                   <div class="card-option">
                      <label class="role">Phân quyền</label>
                      <div class="choose-radio">
                         <div class="form-check">
-                           <input type="radio" class="form-check-input" name="option" value="option1">
-                           <label class="form-check-label" for="option_pv">phóng viên</label>
+                           <input type="radio" name="option" value="option1" style="height:16px; width:16px; vertical-align: middle;">
+                           <label class="form-check-label" for="option_pv">Phóng viên</label>
                         </div>
                         <div class="form-check">
-                           <input type="radio" class="form-check-input" name="option" value="option1">
-                           <label class="form-check-label" for="option_cqnn">cơ quan nhà nước</label>
+                           <input type="radio" name="option" value="option1"  style="height:16px; width:16px; vertical-align: middle;">
+                           <label class="form-check-label" for="option_cqnn">Cơ quan nhà nước</label>
                         </div>
                      </div>
                   </div>
                </div>
-               <button type="submit" class="btn">Submit</button>
+               <div class="layout-btn">
+                  <button type="submit" class="btn">Hủy</button>
+                  <button type="submit" class="btn">Thêm người dùng</button>
+               </div>
             </form>
          </div>
       </div>
    </div>
 
+
+   
    <script>
       let btn = document.querySelector("#btn");
       let sidebar = document.querySelector(".sidebar");
