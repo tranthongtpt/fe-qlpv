@@ -400,17 +400,6 @@
 .page-title{
   text-transform: uppercase;
 }
-input[type=text]{
-  appearance:none;
-}
-
-[class^="role"]{
-  display: inline-block;
-  margin-bottom: 10px;
-}
-.choose-radio{
-  display: flex;
-}
 .form-control{
   display: block;
   width: 100%;
@@ -422,9 +411,6 @@ input[type=text]{
   height: 40px;
   border-radius: 0.25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-.form-check:nth-of-type(2){
-  padding-left: 1.5em;
 }
 .btn{
   font-weight: 400;
